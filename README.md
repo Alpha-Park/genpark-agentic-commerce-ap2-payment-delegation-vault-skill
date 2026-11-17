@@ -83,11 +83,13 @@ Add to your `claude_desktop_config.json` or agent runner config:
   "mcpServers": {
     "genpark-agentic-commerce-ap2-payment-delegation-vault-skill": {
       "command": "python",
-      "args": ["path/to/genpark-agentic-commerce-ap2-payment-delegation-vault-skill/mcp_server.py"]
+      "args": ["/absolute/path/to/genpark-agentic-commerce-ap2-payment-delegation-vault-skill/mcp_server.py"]
     }
   }
 }
 ```
+
+Replace `/absolute/path/to/` with the absolute path to your local checkout. The MCP client launches this server locally; a GitHub URL is not a remote MCP endpoint.
 
 ---
 
